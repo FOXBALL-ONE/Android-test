@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+
+    <!-- 左边带有图标的输入框 -->
+
+    <EditText
+        android:id="@+id/et_with_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:drawablePadding="8dp"
+        android:hint="姓名"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/et_with_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:drawablePadding="8dp"
+        android:hint="手机号"
+        android:padding="12dp"
+        android:background="@android:color/darker_gray"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- 显示性别文本 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:text="性别"
+            android:textSize="16sp" />
+
+        <!-- 单选按钮组，实现性别二选一功能 -->
+        <RadioGroup
+            android:id="@+id/gender_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 男性单选按钮 -->
+            <RadioButton
+                android:id="@+id/male_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="男" />
+
+            <!-- 女性单选按钮 -->
+            <RadioButton
+                android:id="@+id/female_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="女" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="兴趣"
+        android:textSize="16sp"
+        android:paddingBottom="16dp"/>
+
+    <!-- 第一个兴趣选项 -->
+    <CheckBox
+        android:id="@+id/cb_sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运动"
+        android:paddingBottom="8dp"/>
+
+    <!-- 第二个兴趣选项 -->
+    <CheckBox
+        android:id="@+id/cb_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音乐"
+        android:paddingBottom="8dp"/>
+
+    <!-- 第三个兴趣选项 -->
+    <CheckBox
+        android:id="@+id/cb_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="阅读"
+        android:paddingBottom="8dp"/>
+
+
+</LinearLayout>
