@@ -13,7 +13,6 @@
         android:layout_height="153dp"
         app:srcCompat="@android:mipmap/sym_def_app_icon" />
 
-
     <!-- 左边带有图标的输入框 -->
 
     <EditText
@@ -21,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
-        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:drawableLeft="@android:drawable/sym_action_chat"
         android:drawablePadding="8dp"
         android:hint="姓名"
         android:padding="12dp"
@@ -32,14 +31,13 @@
         android:id="@+id/et_with_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:background="@android:color/darker_gray"
+        android:drawableLeft="@android:drawable/stat_sys_phone_call"
         android:drawablePadding="8dp"
         android:hint="手机号"
         android:padding="12dp"
-        android:background="@android:color/darker_gray"
-        android:textColorHint="@android:color/white"
         android:textColor="@android:color/white"
-        />
+        android:textColorHint="@android:color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -92,7 +90,7 @@
         android:id="@+id/cb_sport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="运动"
+        android:text="Jvav"
         android:paddingBottom="8dp"/>
 
     <!-- 第二个兴趣选项 -->
@@ -100,7 +98,7 @@
         android:id="@+id/cb_music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="音乐"
+        android:text="Android"
         android:paddingBottom="8dp"/>
 
     <!-- 第三个兴趣选项 -->
@@ -108,8 +106,16 @@
         android:id="@+id/cb_reading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="阅读"
+        android:text="英语"
         android:paddingBottom="8dp"/>
 
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="375dp"
+        android:layout_height="85dp"
+        android:background="@android:color/darker_gray"
+        android:padding="16dp"
+        android:text="提交"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>
